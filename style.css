@@ -1,0 +1,151 @@
+:root {
+    --piel: #f6c09c;
+    --piel-oscuro: #e0b293;
+    --fondo: #ed4043dc;
+    --rojo: #ed2860;
+    --rojo-oscuro: #680524;
+    --negro: #00241a;
+    --blanco: #fff;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+/* Inicio de la cabeza */
+.container{
+    background-color: var(--fondo);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cabeza {
+    width: 10rem;
+    height: 18rem;
+    background-color: var(--piel);
+    border-radius: 6rem;
+    position: relative;
+    z-index: 3;
+}
+.frente{
+    position: absolute;
+    width: 7rem;
+    height: 1.5rem;
+    border-radius: 20%;
+    top: 4rem;
+    left: 50%;
+    margin-left: -3.5rem;
+    background-color: hsl(0, 90%, 16%);
+    z-index: 5;
+}
+/* Inicio del ojo */
+.ojo {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iris{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #52898d;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ojo-izquierdo{
+    top: 5rem;
+    right: 47%;
+}
+.ojo-derecho{
+    top: 5rem;
+    left: 47%;
+}
+.pupila{
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    background-color: var(--negro);
+    border-radius: 50%;
+}
+/* Fin del ojo */
+/* Inicio orejas */
+.oreja{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    clip-path: circle(50% at 50% 100%);
+    background-color: var(--piel-oscuro);
+}
+.oreja-izquierda{
+    top: 5rem;
+    right: 100%;
+    rotate: 270deg;
+}
+.oreja-derecha{
+    top: 5rem;
+    left: 100%;
+    rotate: 90deg;
+}
+/* Fin orejas */
+/* Inicio nariz */
+.nariz{
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    top: 7.5rem;
+    left: 50%;
+    margin-left: -1.2rem;
+    background-color: var(--piel-oscuro);
+    border-bottom: #c29679 .08rem solid;
+}
+/* Fin nariz */
+/* Inicio boca */
+.boca{
+    position:absolute;
+    width: 7rem;
+    height: 3rem;
+    top: 10rem;
+    left: 50%;
+    margin-left: -3.5rem;
+    border-radius: 10% 10% 50% 50%;
+    background-color: #00241a;
+    display: flex;
+    justify-content: center;
+}
+.diente{
+    position: relative;
+    width: 1.4rem;
+    height: 1.8rem;
+    border-radius: 0 0 20% 20%;
+    background-color: var(--blanco);
+    border-right: rgb(226, 226, 226) .1rem solid;
+}
+/* Fin boca */
+/* Fin de la cabeza */
+/* Inicio del cuello */
+.cuello{
+    width: 7rem;
+    height: 6rem;
+    background-color: var(--piel-oscuro);
+    position: relative;
+    top: -5%;
+    z-index: 2;
+}
+/* Fin del cuello */
